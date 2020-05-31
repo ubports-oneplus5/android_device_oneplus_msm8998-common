@@ -452,4 +452,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubports/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
     $(LOCAL_PATH)/ubports/70-android.rules:system/halium/usr/lib/lxc-android-config/70-android.rules \
-    $(LOCAL_PATH)/ubports/70-android.rules:system/halium/etc/udev/rules.d/70-android.rules
+    $(LOCAL_PATH)/ubports/70-android.rules:system/halium/etc/udev/rules.d/70-android.rules \
+    $(LOCAL_PATH)/ubports/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf
