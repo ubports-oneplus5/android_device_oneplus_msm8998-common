@@ -139,8 +139,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     camera.device@1.0-impl \
-    camera.device@3.2-impl \
-    Snap
+    camera.device@3.2-impl
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
@@ -179,10 +178,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.0 \
     vendor.display.config@1.0_vendor
 
-# Doze
-PRODUCT_PACKAGES += \
-    Doze
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
@@ -193,8 +188,7 @@ PRODUCT_PACKAGES += \
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service \
-    fingerprintd \
-    OneplusPocketMode
+    fingerprintd
 
 # For android_filesystem_config.h
 PRODUCT_PACKAGES += \
@@ -241,13 +235,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,${LOCAL_PATH}/prebuilt/vendor,$(TARGET_COPY_OUT_VENDOR))
 
-# IFAA (Fingerprint support for Alipay)
-PRODUCT_PACKAGES += \
-    org.ifaa.android.manager
-
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
-
 # IPv6
 PRODUCT_PACKAGES += \
     ebtables \
@@ -260,12 +247,6 @@ PRODUCT_COPY_FILES += \
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
-
-# Keylayout
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/fpc1020.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/fpc1020.kl \
-    $(LOCAL_PATH)/keylayout/synaptics.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics.kl \
-    $(LOCAL_PATH)/keylayout/synaptics.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_s3320.kl
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -308,16 +289,15 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0-impl \
-    com.android.nfc_extras \
-    com.nxp.nfc.nq \
+#    com.android.nfc_extras \
+#    com.nxp.nfc.nq \
     com.nxp.nfc.nq.xml \
     libnqnfc-nci \
     libnqp61-jcop-kit \
     nfc_nci.nqx.default \
-    NQNfcNci \
+#    NQNfcNci \
     nqnfcee_access.xml \
     nqnfcse_access.xml \
-    Tag \
     vendor.nxp.hardware.nfc@1.1-service
 
 PRODUCT_COPY_FILES += \
@@ -328,8 +308,8 @@ PRODUCT_COPY_FILES += \
 
 # NFC - Secure Element
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0-service \
-    SecureElement
+    android.hardware.secure_element@1.0-service
+#    SecureElement
 
 # OEM Unlock reporting
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -395,10 +375,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     ims-ext-common
-#    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -470,13 +446,12 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
-#    hostapd \
     hostapd_cli \
     libqsap_sdk \
     libQWiFiSoftApCfg \
     libwifi-hal-qcom \
     wificond \
-    wpa_supplicant \
+#    wpa_supplicant \
     wpa_supplicant.conf \
     wifi-mac-generator
 
@@ -492,6 +467,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
