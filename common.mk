@@ -394,8 +394,8 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
 
 PRODUCT_PACKAGES += \
-    ims-ext-common \
-    telephony-ext
+    ims-ext-common
+#    telephony-ext
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
@@ -470,7 +470,7 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
-    hostapd \
+#    hostapd \
     hostapd_cli \
     libqsap_sdk \
     libQWiFiSoftApCfg \
