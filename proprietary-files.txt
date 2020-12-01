@@ -2,7 +2,6 @@
 vendor/etc/firmware/tfa98xx.cnt:vendor/firmware/tfa98xx.cnt
 
 # Alipay
--priv-app/IFAAService/IFAAService.apk
 lib/libteeclientjni.so
 lib/vendor.oneplus.hardware.ifaa@2.0.so
 lib64/libteeclientjni.so
@@ -57,7 +56,6 @@ vendor/firmware/ipa_fws.mdt
 vendor/lib/libpn553_fw.so
 
 # Radio - factory
--framework/vendor.oneplus.hardware.param-V1.0-java.jar
 lib/vendor.oneplus.hardware.param@1.0.so
 lib64/vendor.oneplus.hardware.param@1.0.so
 vendor/bin/hw/vendor.oneplus.hardware.param@1.0-service
