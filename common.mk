@@ -487,3 +487,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Halium
+PRODUCT_PACKAGES += \
+    libhfd_api
+
